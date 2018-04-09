@@ -10,10 +10,10 @@ This small project uses NPM, if you use Yarn please remove beforehand the `node_
 Port is setup in `.env` file at 5000
 
 ### Install
-As usual just run ``` npm install ``` to get the project's dependencies
+Just run ``` npm install ``` to get the project's dependencies
 
 ### Run
-Just run it using ``` npm start ``` or update the *package.json* file
+Just run ``` npm start ``` or update the scripts in *package.json*
 
 
 
