@@ -31,7 +31,7 @@ router.patch('/:taskId', (req, res) => {
   
   const status = req.body.status;
   const timer = req.body.timer;
-  console.log('status is => ', status);
+
   Task.findOneAndUpdate({ _id: req.params.taskId }, { status: status, timer: timer } , (err, task) => {
     if (err) { return res.status(500).json({ error: err }); }
     // not 204 since we need to get the resource back in client logic
