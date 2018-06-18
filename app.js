@@ -1,14 +1,14 @@
-var express = require('express');
-var mongoose = require('mongoose');
-var path = require('path');
-var logger = require('morgan');
-var bodyParser = require('body-parser');
-var cors = require('cors');
+const express = require('express');
+const mongoose = require('mongoose');
+const path = require('path');
+const logger = require('morgan');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-var tasks = require('./routes/tasks');
+const tasks = require('./routes/tasks');
 
-var router = express.Router();
-var app = express();
+const router = express.Router();
+const app = express();
 app.use(cors())
 require('dotenv').config();
 
@@ -27,7 +27,7 @@ app.use('/api/', router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  const err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
